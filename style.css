@@ -188,7 +188,7 @@ h1{
 
 .hero-button{
     width: 10vw;
-    height: 100vh;
+    height: 5vh;
     border-radius: 15px;
     font-size: 10px;
     background-color: #F7B54A;
@@ -373,6 +373,7 @@ h6{
     padding: 5vh 3vw;
     align-items: center;
     gap: 3vw;
+    flex-direction: row;
 }
 
 .booking2-div1{
