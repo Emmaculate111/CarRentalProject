@@ -1,0 +1,971 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    font-family: 'latoheavy';
+}
+
+a{
+    color: black;
+}
+
+
+/*--------------------------------------------BUTTON GENERAL --------------------------------------*/
+button{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #FDEEDA;
+}
+
+
+.white-btn:hover{
+    background-color: #F7B54A;
+}
+
+.disappear-btn:hover, .disappear-btn:hover a{
+    background-color: black;
+    color: white;
+}
+
+
+/* ---------------------- THIS IS THE HERO SECTION ----------------------------- */
+
+
+.hero{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 3vw;
+    flex-direction: column;
+    background-image: url('hero (1).png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+
+header{
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header-top-img{
+    height: 100%;
+    width: 100%;
+    margin-left: -3vw;
+}
+
+
+.link-logo{
+    height: 60%;
+    width: 20vw;
+}
+
+.header-top-nav{
+    height: 100%;
+    margin-left: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+header a{
+    color: white;
+}
+
+.header-top-nav-list{
+    font-size: 13px;
+    padding: 7px 10px;
+    border-radius: 15px;
+}
+
+.header-top-nav-list:hover, .header-top-nav-list.active{
+    background-color: #F7B54A;
+}
+
+.styled-list{
+    padding: 2vh 1.5vw;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+
+.drop-down{
+    position: relative;
+}
+
+.header-top-nav-list:hover .drop-down-menu{
+    display: flex;
+}
+
+.drop-down-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    display: none;
+}
+
+
+.drop-down-menu-list{
+    border-bottom: 1px solid white;
+    background-color: black;
+    border-bottom: 1px solid white;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 4px;
+}
+
+
+.drop-down-menu-list:hover{
+    background-color: #F7B54A;
+}
+
+.menu-bar{
+    height: 100%;
+    width: 10vw;
+    display: none;
+
+}
+
+.hero-content{
+    width: 50%;
+    height: 70vh;
+    line-height: 9vh;
+}
+
+h1{
+    font-size: 55px;
+}
+.hero-content-little{
+    width: auto;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    height: 5vh;
+}
+
+.fa-check{
+    border: 1px solid #F7B54A;
+    border-radius: 50%;
+    color: #F7B54A;
+    font-size: 15px;
+}
+
+.too-little{
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+.hero-button{
+    width: 10vw;
+    height: 100vh;
+    border-radius: 15px;
+    font-size: 10px;
+    background-color: #F7B54A;
+}
+
+/* ---------------------- THIS IS THE AFTER-HERO SECTION ----------------------------- */
+
+.after-hero{
+    height: 70vh;
+    width: 100%;
+    padding: 5vh 3vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    color: white;
+    background-color: black;
+}
+
+
+
+h2{
+    font-size: 35px;
+}
+.after-hero-list{
+    width: 100%;
+    margin-top: 5vh;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vw;
+}
+
+.after-hero-listing{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 1vw;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+    background-color: rgba(255, 255, 255, 0.213);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.after-hero-listing:hover{
+    background-color: #F7B54A;
+}
+
+.after-hero-listing:hover .iconing{
+    background-color: #FDEEDA;
+}
+
+.iconing{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F7B54A;
+    margin-top: -6vh;
+}
+
+.iconing i{
+    font-size: 25px;
+    color: black;
+}
+
+h6{
+    font-size: 20px;
+}
+
+
+/* ---------------------- THIS IS THE BOOKING ONE SECTION ----------------------------- */
+
+
+.booking{
+    padding: 5vh 3vw;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.smallest-text{
+    color: #F7B54A;
+}
+.booking-div1{
+    width: 90%;
+    margin-top: 2vh;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-button{
+    width: 12vw;
+    border-radius: 15px;
+    height: 5vh;
+    font-size: 10px;
+    background-color: #F7B54A;
+}
+
+.booking-div2{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    align-items: center;
+}
+
+.booking-div2-content{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 2vh 3vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #FDEEDA;
+    gap: 1vh;
+}
+
+.fa-quote-right{
+    font-size: 40px;
+    color: #F7B54A;
+}
+
+.booking-div2-content-img{
+    width: auto;
+    height: auto;
+}
+
+.bookimage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.smalltextlist{
+    font-size: 10px;
+    padding: 0.3vh 1vw;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 1vw;
+}
+
+.book-btn{
+    width: 20vh;
+    height: 5vh;
+    border-radius: 15px;
+    font-size: 10px;
+    background-color: #F7B54A;
+}
+
+.booking-div2-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* ---------------------- THIS IS THE BOOKING TWO SECTION ----------------------------- */
+
+.booking2{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 3vw;
+    align-items: center;
+    gap: 3vw;
+}
+
+.booking2-div1{
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.booking2-div1-button{
+    width: 25vh;
+    height: 5vh;
+    font-size: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.booking2-div2{
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 5vh 3vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: #FDEEDA;
+}
+
+
+.booking2image{
+    width: 100%;
+    height: 50%;
+}
+
+/* ---------------------- THIS IS THE HERO TWO SECTION ----------------------------- */
+
+
+.hero2{
+    height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3vw;
+    align-items: center;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.8), rgba(4, 4, 4, 0.8)), url('mercedes-benz-841465_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.hero2-content{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.hero2-content-button{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 15px;
+    font-size: 10px;
+    background-color: #F7B54A;
+    margin-top: 4vh;
+}
+
+
+
+/* ---------------------- THIS IS THE HORIZONATAL LINE SECTION ----------------------------- */
+
+.horizontal-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    margin: 2vh 0;
+    gap: 1vw;
+    padding: 2vh 3vw;
+
+}
+
+.horizontal-line hr{
+    width: 50%;
+    background-color: black;
+    height: 1px;
+}
+
+.horizontal-line i{
+    font-size: 20px;
+}
+
+/* ---------------------- THIS IS THE PRICING SECTION ----------------------------- */
+
+.pricing{
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vh 3vw;
+    gap: 2vh;
+}
+
+.view-plans{
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-plans-button{
+    height: 5vh;
+    width: 12vw;
+    font-size: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.price{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 70vh;
+    gap: 2vw;
+    margin-top: 4vh;
+}
+
+.price-number{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 3vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.middle-price-number{
+    background-image: linear-gradient(#F7B54A, white);
+    margin-top: -10vh;
+}
+
+.price-number-button{
+    height: 5vh;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 10px;
+    background-color: #F7B54A;
+}
+
+
+/* ---------------------- THIS IS THE FAQ SECTION ----------------------------- */
+
+.faq{
+    height: auto;
+    padding: 7vh 3vw;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    align-items: center;
+}
+
+.faq-questions{
+    width: 100%;
+    height: 70vh;
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    border-radius: 10px;
+    background-color: #F7B54A;
+}
+
+.faq-questions-list{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.faq-questions-list-top{
+    padding: 2vh 2vw;
+    width: 100%;
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.faq-questions-list-buttom{
+    padding: 2vh 2vw;
+    width: 100%;
+    display: none;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #F7B54A;
+}
+
+.faq-content{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2vh;
+    border-radius: 10px;
+}
+
+.faq-content-button{
+    height: 5vh;
+    width: 17vh;
+    border-radius: 15px;
+    margin-top: 4vh;
+    font-size: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.faq-content-div{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+    gap: 1vw;
+}
+
+.faq-content-div-one{
+    width: 95%;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.fa-map-marker-alt, .fa-dollar-sign{
+    font-size: 50px;
+    margin-left: auto;
+}
+/* ---------------------- THIS IS THE HERO 3 SECTION ----------------------------- */
+
+.hero3{
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(360deg,rgb(0, 0, 0, 1) 3%, rgb(0, 0, 0, 0.6) 15%), url('luxury-car-speeds-by-modern-building-dusk-generative-ai (1).jpg');
+    background-position: center;
+    background-size: cover;
+    background-position-y: 80%;
+    color: white;
+}
+
+.hero3-div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    text-align: center;
+}
+
+.hero3-div-buttton{
+    width: 17vw;
+    border-radius: 15px;
+    font-size: 10px;
+    height: 5vh;
+    background-color: #F7B54A;
+}
+
+
+/* ---------------------- THIS IS THE FOOTER SECTION ----------------------------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    padding: 2vh 3vw;
+    background-color: black;
+    color: white;
+
+}
+
+footer a{
+    color: white;
+    font-size: 13px;
+}
+
+a h6{
+    color: #F7B54A;
+}
+
+.fa-exchange-alt{
+    color: #F7B54A;
+    font-size: 25px;
+    margin-right: 1vw;
+}
+
+.Get-in-touch{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+    font-size: 20px;
+}
+
+.Get-in-touch-div{
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.Get-in-touch-p{
+    font-size: 17px;
+    margin-left: auto;
+}
+.Get-in-touch-buttton{
+    width: 13vw;
+    height: 5vh;
+    font-size: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+.Get-in-touch-buttton:hover{
+    background-color: #F7B54A;
+}
+.footer-content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-content-left{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.footer-content-left-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 20vw;
+    height: auto;
+    gap: 0.5vh;
+}
+
+.footer-content-right{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 4vw;
+}
+
+.footer-listing{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.footer-content-right-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 0.5vh;
+
+}
+
+.footer-end{
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.footer-end-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+.footer-end-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vh;
+    height: 100%;
+    gap: 0.2vw;
+}
+
+footer .fab{
+    color: #F7B54A;
+}
+
+footer hr{
+    height: 1px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+
+
+/*---------------------------------------MOBILE RESPONSIVENESS-----------------------*/
+
+
+
+@media only screen and (max-width: 767px) {
+    /*----------GENERAL---------*/
+    
+  button{
+        width: 150px !important;
+        height: 40px !important;
+        border-radius: 20px !important;
+        font-size: 16px !important;
+   }
+   
+  body {
+    font-size: 14px;
+  }
+  .close, .closey{
+      display: none;
+  }
+  
+  .open{
+      display: flex;
+  }
+  /*----------------- HERO SECTION ------------- */
+  .header-top-nav{
+      display: none;
+  }
+  .link-logo{
+      width: 40%;
+      height: 100%;
+  }
+  .menu-bar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .menu-bar i{
+       color: #F7B54A;
+       font-size: 45px;
+  }
+  .hero-content-little{
+      margin-bottom: 70px;
+  }
+  header{
+      position: fixed;
+      padding: 0 2vw;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      background-color: black;
+  }
+  .header-bottom{
+      width: 100vw;
+      display: none;
+      min-height: 100vh;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      font-size: 35px;
+      padding-top: 40px;
+      gap: 8px;
+  }
+  
+  .header-bottom a{
+      color: #F7B54A;
+  }
+  .droppy{
+      width: 70%;
+      text-align: center;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      color: white !important;
+  }
+  
+  
+  /*--------------AFTER HERO----------*/
+  .after-hero{
+      height: auto !important; 
+  }
+  .after-hero-list{
+      flex-direction: column;
+      gap: 50px;
+  }
+  .after-hero-listing{
+      height: 300px !important;
+  }
+  
+  /**************BOOKING ONE *************/
+  .booking{
+      height: auto !important;
+  }
+  .booking-div2{
+      flex-direction: column;
+  }
+
+/*----------------BOOKING TWO --------------*/
+    .hero2-content{
+        width: 80vw !important;
+    }
+
+/*----------------HERO THREE-------------*/
+
+    .hero3-div{
+        width: 80vw;
+    }
+
+/*----------------PRICING----------------*/
+    .pricing{
+        height: auto !important;
+    }
+    .price{
+        flex-direction: column !important;
+        margin-top: 15px;
+    }
+
+/*----------------FOOTER-------------*/
+    .footer-content{
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: centre !important;
+        gap: 20px !important;
+    }
+    .footer-content-right{
+        gap: 40px;
+    }
+}
